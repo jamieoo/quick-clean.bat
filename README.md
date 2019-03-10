@@ -6,7 +6,7 @@
 
 
 ::Setup:
-	::0. login directly with SA account
+	::0. login directly to your machine with SA account
 	::1. download PsTools: https://download.sysinternals.com/files/PSTools.zip
 	::2. extract PSTools.zip to C:/Windows/System32.
 	::3. paste script in text editor. Edit bracketed sections with your info.
@@ -17,9 +17,10 @@
 	::/verylow flag disk removes: downloaded program files, temp internet files, offline webpages, recycle bin, setup log files, temp files, thumbnails.
 	::brackets denote user entry- do not include in script.
 
-::Future Updates:
-	::script will return a text file of all supplied offline/unreachable machines(1). 
-	::script will be scheduled to start automatically the next time a user logins to a machine(1). 
+::Future-Updates:
+	::replace >psexec with >pssession. 
+	::return qc-offline of all offline/unreachable machines.
+	::script will be scheduled to start again automatically the next time the deployed-to user logins with their credentials to a machnine found in qc-offline(>Register-ScheduledJob). 
 
 
 
